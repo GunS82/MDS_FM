@@ -133,11 +133,13 @@ async def run_pipeline(args: argparse.Namespace) -> None:
             headless=args.headless,
             slow_mo=args.slowmo,
         )
-        page: Page = await browser.new_page()
+        context = await browser.new_context(ignore_https_errors=args.ignore_https_errors)
+        page: Page = await context.new_page()
 
         await configure_page(page, args.voice, instruction, args.timeout)
         await iterate_prompts(page, prompts, pathlib.Path(args.output_dir), args.prefix, args.timeout)
 
+        await context.close()
         await browser.close()
 
 
@@ -181,6 +183,11 @@ def build_parser() -> argparse.ArgumentParser:
         type=float,
         default=0,
         help="Delay (in ms) between Playwright actions for easier debugging.",
+    )
+    parser.add_argument(
+        "--ignore-https-errors",
+        action="store_true",
+        help="Ignore HTTPS/TLS errors when loading openai.fm (useful in controlled environments).",
     )
     return parser
 
