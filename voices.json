@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Alloy",
+    "code": "alloy",
+    "description": "Polished studio narrator with balanced tone suitable for most content."
+  },
+  {
+    "name": "Ash",
+    "code": "ash",
+    "description": "Friendly conversational delivery with a relaxed cadence."
+  },
+  {
+    "name": "Ballad",
+    "code": "ballad",
+    "description": "Expressive storyteller voice with gentle rises and falls ideal for fiction."
+  },
+  {
+    "name": "Coral",
+    "code": "coral",
+    "description": "Bright and energetic delivery that keeps marketing copy lively."
+  },
+  {
+    "name": "Ember",
+    "code": "ember",
+    "description": "Warm baritone presence that adds weight to instructional material."
+  },
+  {
+    "name": "Juniper",
+    "code": "juniper",
+    "description": "Crisp and precise diction suited for technical explainers."
+  },
+  {
+    "name": "Lunar",
+    "code": "lunar",
+    "description": "Soft-spoken voice with a calm, atmospheric quality."
+  },
+  {
+    "name": "Mist",
+    "code": "mist",
+    "description": "Airy and light timbre that works well for guided meditations."
+  },
+  {
+    "name": "Onyx",
+    "code": "onyx",
+    "description": "Deep, confident tone that emphasizes authority and clarity."
+  },
+  {
+    "name": "River",
+    "code": "river",
+    "description": "Smooth, flowing delivery for documentaries and long-form content."
+  },
+  {
+    "name": "Sol",
+    "code": "sol",
+    "description": "Upbeat and optimistic style designed for announcements and intros."
+  }
+]
